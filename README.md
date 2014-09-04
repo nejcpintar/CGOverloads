@@ -5,6 +5,7 @@ Basic operator overloads for CGSize, CGPoint and CGRect
 
 
 Enables you to add/substract CGSize and CGPoint easily:
+```
 let point1 = CGPointMake(20, 20)
 let point2 = CGPointMake(10, 10)
 let point3 = CGPointMake(10, 10)
@@ -24,9 +25,11 @@ let scalar : CGFloat = 10
 //size1 * scalar returns CGSize(200, 200)
 //size2 == size3 returns true
 // +=, -= and *= operators also work
+```
 
 Simple CGRect comparison, union and intersection:
 
+```
 let rect1 = CGRectMake(0, 0, 10, 10)
 let rect2 = CGRectMake(5, 5, 10, 10)
 let rect3 = CGRectMake(5, 5, 10, 10)
@@ -34,3 +37,5 @@ let rect3 = CGRectMake(5, 5, 10, 10)
 //rect1 & rect2 returns intersection - CGRect(5, 5, 5, 5)
 //rect2 == rect3 returns true
 // |= and &= operators also work
+```
+
